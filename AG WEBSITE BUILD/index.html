@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AG TECH | Innovation Redefined</title>
+    <link rel="icon" type="image/png" href="images/AG BACKGROUND.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
+        .glass { background: rgba(15, 23, 42, 0.9); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
+        .hero-gradient { background: radial-gradient(circle at top right, #f0fdf4, #ffffff, #eff6ff); }
+        .logo-glow { filter: drop-shadow(0 0 8px rgba(16, 185, 129, 0.4)); }
+        #executive-modal {
+    transition: opacity 0.3s ease;
+}
+#modal-content {
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: scale(0.9);
+}
+#executive-modal.active #modal-content {
+    transform: scale(1);
+}
+
+/* Moved inline styles into stylesheet */
+.about-section { position: relative; }
+ </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 glass border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="images/AG BACKGROUND.png" alt="AG TECH Logo" class="h-24 w-auto logo-glow" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=AG&background=059669&color=fff';">
+                <span class="text-2xl font-bold tracking-tight text-slate-900"></span>
+                </div>
+            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="index.html" class="hover:text-emerald-600 transition">Home</a>
+                <a href="#about" class="hover:text-emerald-600 transition">Mission & Vision</a>
+                <a href="#team" class="hover:text-emerald-600 transition">Executives</a>
+                <a href="#contact" class="hover:text-emerald-600 transition">Contact</a>
+                <a href="https://agtechpreview.lovable.app/" class="hover:text-emerald-600 transition">Product</a>
+            </div>
+            <a href="#contact" class="bg-slate-900 text-white px-6 py-2 rounded-full hover:bg-emerald-600 transition shadow-lg shadow-slate-200">Get Started</a>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-48 pb-32 px-6 hero-gradient">
+        <div class="max-w-7xl mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-5xl md:text-8xl font-extrabold text-slate-900 mb-6 leading-tight">
+                Building the Infrastructure <br><span class="text-emerald-600">for Tomorrow.</span>
+            </h1>
+            <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                We provide clean, scalable, and innovative solutions for the next generation of digital startups.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#about" class="px-8 py-4 bg-emerald-600 text-white rounded-full font-semibold hover:bg-emerald-700 transition transform hover:-translate-y-1">Our Mission & Vision</a>
+                <a href="#team" class="px-8 py-4 bg-white border border-slate-200 text-slate-900 rounded-full font-semibold hover:bg-slate-50 transition">Meet the Team</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="100">
+                <div class="w-12 h-12 bg-blue-100 rounded-xl mb-6 flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Rapid Deployment</h3>
+                <p class="text-slate-500">Accelerate your time-to-market with our optimized cloud infrastructure.</p>
+            </div>
+            <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="200">
+                <div class="w-12 h-12 bg-emerald-100 rounded-xl mb-6 flex items-center justify-center text-emerald-600 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.040L3 14.535a12.02 12.02 0 0010.182 9.026 12.02 12.02 0 0010.182-9.026L20.618 7.984z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Secured by Design</h3>
+                <p class="text-slate-500">Enterprise-grade security protocols baked into every line of code we write.</p>
+            </div>
+            <div class="p-8 bg-white rounded-3xl border border-slate-100 shadow-sm hover:shadow-2xl transition-all duration-300 group" data-aos="fade-up" data-aos-delay="300">
+                <div class="w-12 h-12 bg-slate-100 rounded-xl mb-6 flex items-center justify-center text-slate-600 group-hover:bg-slate-900 group-hover:text-white transition">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">24/7 Support</h3>
+                <p class="text-slate-500">Our dedicated team of experts is always available to keep you running.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 px-6 bg-slate-900 text-white rounded-[3rem] mx-4 overflow-hidden about-section">
+    <div class="max-w-7xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+            
+            <div data-aos="fade-right">
+                <span class="text-emerald-400 font-semibold tracking-widest uppercase text-sm">Our Purpose</span>
+                <h2 class="text-4xl md:text-5xl font-bold mt-4 mb-8">Our Mission.</h2>
+                <p class="text-lg text-slate-400 leading-relaxed mb-10">
+                    Founded in 2023, AG Tech's mission is to empower young African innovators through comprehensive tech education, meaningful opportunity creation, and impactful projects that generate positive social change across communities.
+                </p>
+                
+                <div class="space-y-6">
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-1 bg-emerald-500"></div>
+                        <div>
+                            <h4 class="font-bold text-xl">Empowerment</h4>
+                            <p class="text-slate-400 text-sm">Providing young African innovators with comprehensive tech training and impactful projects.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-1 bg-emerald-500"></div>
+                        <div>
+                            <h4 class="font-bold text-xl">Innovation</h4>
+                            <p class="text-slate-400 text-sm">Pushing the boundaries of what's possible.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex-shrink-0 w-1 bg-emerald-500"></div>
+                        <div>
+                            <h4 class="font-bold text-xl">Sustainability</h4>
+                            <p class="text-slate-400 text-sm">Building long-term infrastructure for growth.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative flex justify-center items-center" data-aos="zoom-in">
+                <div class="w-full max-w-md aspect-square bg-emerald-600/10 rounded-full flex items-center justify-center border border-emerald-500/30 p-8 md:p-12 shadow-2xl">
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold mb-4 text-emerald-400">Our Vision</h3>
+                        <p class="text-slate-200 italic text-lg md:text-xl leading-relaxed">
+                            "To see a generation of youth across Africa equipped, enabled, and respected in the global tech ecosystem; where talent and innovative ideas are never limited by financial constraints or background circumstances."
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="team" class="py-32 px-6 max-w-7xl mx-auto">
+    <div class="text-center mb-20" data-aos="fade-up">
+        <h2 class="text-4xl md:text-5xl font-bold mb-4 text-slate-900 uppercase tracking-tight">Meet the Executives</h2>
+        <div class="h-1.5 w-24 bg-emerald-500 mx-auto rounded-full mb-6"></div>
+        <p class="text-slate-500 text-lg">The visionary team driving innovation across the continent.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+        
+        <div class="text-center group cursor-pointer" onclick="openModal('Oluwadamilola')" data-aos="fade-up">
+            <div class="relative w-48 h-48 mx-auto mb-6">
+                <div class="absolute inset-0 bg-emerald-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
+                <img src="images/Alayaki.jpg" alt="Alayaki" class="relative w-48 h-48 bg-slate-200 rounded-2xl object-cover shadow-lg">
+            </div>
+            <h4 class="text-xl font-bold text-slate-900">Alayaki Oluwadamilola.Y</h4>
+            <p class="text-emerald-600 font-medium">CSO/Co-Founder</p>
+        </div>
+
+        <div class="text-center group cursor-pointer" onclick="openModal('Alayaki')" data-aos="fade-up" data-aos-delay="100">
+            <div class="relative w-48 h-48 mx-auto mb-6">
+                <div class="absolute inset-0 bg-emerald-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
+                <img src="images/2.jpeg" alt="Gamaliel" class="relative w-48 h-48 bg-slate-200 rounded-2xl object-cover shadow-lg">
+            </div>
+            <h4 class="text-xl font-bold text-slate-900">Gamaliel Godfrey.B</h4>
+            <p class="text-emerald-600 font-medium">CCO/Co-Founder</p>
+        </div>
+
+        <div class="text-center group cursor-pointer" onclick="openModal('Moses')" data-aos="fade-up" data-aos-delay="200">
+            <div class="relative w-48 h-48 mx-auto mb-6">
+                <div class="absolute inset-0 bg-emerald-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
+                <img src="images/MOSES 2.jpeg" alt="Moses" class="relative w-48 h-48 bg-slate-200 rounded-2xl object-cover shadow-lg">
+            </div>
+            <h4 class="text-xl font-bold text-slate-900">Avamale Moses.O</h4>
+            <p class="text-emerald-600 font-medium">COO/Co-Founder</p>
+        </div>
+
+        <div class="text-center group cursor-pointer" onclick="openModal('Gamaliel')" data-aos="fade-up" data-aos-delay="300">
+            <div class="relative w-48 h-48 mx-auto mb-6">
+                <div class="absolute inset-0 bg-emerald-600 rounded-2xl rotate-6 group-hover:rotate-12 transition-transform"></div>
+                <img src="images/AG 2026.jpg" alt="Gamaliel" class="relative w-48 h-48 bg-slate-200 rounded-2xl object-cover shadow-lg">
+            </div>
+            <h4 class="text-xl font-bold text-slate-900">Agbebaku Oluwadamilola.B</h4>
+            <p class="text-emerald-600 font-medium">CEO/Founder</p>
+        </div>
+    </div>
+</section>
+    <section id="contact" class="py-32 px-6 bg-white border-y border-slate-100">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16">
+            <div data-aos="fade-right">
+                <h2 class="text-5xl font-bold mb-6 text-slate-900 leading-tight">Let’s start a <br>conversation.</h2>
+                <p class="text-slate-500 mb-10 text-lg">Ready to take your business to the next level? Our team is here to help you navigate the future.</p>
+                <div class="space-y-6">
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                        </div>
+                        <span class="font-semibold text-lg">Agtechrelations@gmail.com</span>
+                    </div>
+                    <div class="flex items-center gap-4 group">
+                        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 group-hover:bg-emerald-600 group-hover:text-white transition">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                        </div>
+                        <span class="font-semibold text-lg">Lagos, Nigeria.</span>
+                    </div>
+                </div>
+            </div>
+            <form id="my-form" class="bg-slate-50 p-10 rounded-3xl border border-slate-200" data-aos="fade-left">
+                <div class="mb-4">
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Name</label>
+                    <input type="text" name="name" placeholder="Enter your full name" required class="w-full px-4 py-4 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
+                </div>
+                <div class="mb-4">
+                    <label class="block text-sm font-bold text-slate-700 mb-2">Email Address</label>
+                    <input type="email" name="email" placeholder="your@email.com" required class="w-full px-4 py-4 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white">
+                </div>
+                <div class="mb-6">
+                    <label class="block text-sm font-bold text-slate-700 mb-2">How can we help?</label>
+                    <textarea name="message" placeholder="Tell us about your project" required rows="4" class="w-full px-4 py-4 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 bg-white"></textarea>
+                </div>
+                <button type="submit" id="submit-button" class="w-full bg-slate-900 text-white px-6 py-4 rounded-xl font-bold hover:bg-emerald-600 transition shadow-lg">
+    Send Message
+</button>
+                <p id="form-status" class="mt-4 text-center text-sm font-medium"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-400 py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div class="flex flex-col items-center md:items-start gap-4">
+                <div class="flex items-center gap-3">
+                    <img src="images/AG BACKGROUND.png" alt="AG TECH" class="h-12 w-auto brightness-200" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=AG&background=059669&color=fff';">
+                    <span class="text-2xl font-bold text-white tracking-tight">AG TECH</span>
+                </div>
+                <p class="text-sm max-w-xs text-center md:text-left">Innovation redefined through scalable infrastructure and secure architecture.</p>
+            </div>
+            <div class="flex space-x-8 text-sm font-medium">
+                <a href="#" class="hover:text-emerald-400 transition">Privacy</a>
+                <a href="#" class="hover:text-emerald-400 transition">Terms and Conditions</a>
+                <a href="https://www.instagram.com/agworldwide_?igsh=aXFzbHNuc2U2dHF6&utm_source=qr" class="hover:text-emerald-400 transition">Instagram</a>
+                <a href="https://www.linkedin.com/company/agtechlinkedin/" class="hover:text-emerald-400 transition">LinkedIn</a>
+            </div>
+            <p class="text-xs uppercase tracking-widest">© 2026 AG TECH.</p>
+        </div>
+    </footer>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-out-quad'
+        });
+    </script>
+    <script src="script.js"></script> 
+
+    <div id="executive-modal" class="fixed inset-0 z-[100] flex items-center justify-center p-4 opacity-0 pointer-events-none hidden">
+        
+        <div class="absolute inset-0 bg-slate-900/80 backdrop-blur-md" onclick="closeModal()"></div>
+        
+        <div id="modal-content" class="relative bg-white w-full max-w-2xl rounded-[2rem] shadow-2xl overflow-hidden flex flex-col md:flex-row transform scale-90 transition-all duration-300">
+            
+            <button onclick="closeModal()" class="absolute top-4 right-4 z-10 bg-white/80 rounded-full p-2 text-slate-900 hover:bg-emerald-500 hover:text-white transition shadow-sm">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+            </button>
+            
+            <div class="w-full md:w-1/2 h-64 md:h-auto bg-slate-100">
+                <img id="modal-img" src="" class="w-full h-full object-cover">
+            </div>
+            
+            <div class="p-8 md:w-1/2 flex flex-col justify-center">
+                <span id="modal-role" class="text-emerald-600 font-bold text-xs uppercase tracking-widest mb-2"></span>
+                <h3 id="modal-name" class="text-2xl font-bold text-slate-900 mb-2 leading-tight"></h3>
+                <p id="modal-specialty" class="text-slate-500 text-sm font-medium mb-4"></p>
+                <div class="w-12 h-1 bg-emerald-100 mb-4 rounded-full"></div>
+                <p id="modal-bio" class="text-slate-600 text-sm leading-relaxed"></p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
